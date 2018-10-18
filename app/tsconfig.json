@@ -9,7 +9,7 @@
     "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "src/component",
+    "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -21,9 +21,7 @@
     "allowSyntheticDefaultImports": true // 允许从没有设置默认导出的模块中默认导入
 
   },
-  "include": [
-    "src/component"
-  ],
+
   "exclude": [
     "node_modules",
     "build",

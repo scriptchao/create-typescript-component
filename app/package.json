@@ -48,7 +48,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lib": "rimraf lib && npm run lib:types && npm run lib:js",
-    "lib:js": "babel src/component --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "lib:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "lib:types": "tsc --emitDeclarationOnly --declaration",
     "dist": "rimraf dist && node scripts/dist.js"
   },
@@ -67,6 +67,11 @@
     "rimraf": "^2.6.2",
     "typescript": "^3.1.1"
   },
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}"
