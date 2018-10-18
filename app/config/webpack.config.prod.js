@@ -125,10 +125,10 @@ module.exports = {
             // We are waiting for https://github.com/facebookincubator/create-react-app/issues/2176.
             // { parser: { requireEnsure: false } },
             {
-                test: /\.(js|jsx|mjs)$/,
+                test: /\.(js|jsx|mjs|tsx?)$/,
                 loader: require.resolve('source-map-loader'),
                 enforce: 'pre',
-                include: paths.appSrc,
+                // include: paths.appSrc,
             },
             {
                 // "oneOf" will traverse all following loaders until one will
@@ -146,8 +146,8 @@ module.exports = {
                         },
                     },
                     {
-                        test: /\.(js|jsx|mjs)$/,
-                        include: paths.appSrc,
+                        test: /\.(js|jsx|mjs|tsx?)$/,
+                        // include: paths.appSrc,
                         loader: require.resolve('babel-loader'),
                         options: {
 
