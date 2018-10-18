@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "no-console": false, // 不能使用console
+    "interface-name": false, // 必须以I开头
+    "max-classes-per-file": false, // 每个文件能定义的class个数
+    "member-access": false, // 必须加public private前缀
+    "no-unused-expression": false, // 不允许存在未使用的表达式
+    "variable-name": false, // 变量不能是下划线
+    "no-empty": false, // block no-empty
+    "no-shadowed-variable": false, // 页面不能有重名参数
+    "ordered-imports": false, // import排序
+    "jsx-no-lambda": false, // jsx不能使用匿名函数
+    "jsx-self-close": false, // jsx标签自闭合
+    "object-literal-sort-keys": false, // 对象字母排序
+    "only-arrow-functions": false,
+    "callable-types": false,
+    "jsx-boolean-value": false // jsx禁用boolean属性简写
+  }
+}
