@@ -1,0 +1,12 @@
+{
+  "name": "@yt/yt-ts-component-app",
+  "version": "1.0.0",
+  "bin": {
+    "yt-ts-component-app": "./tasks/create.js"
+  },
+  "scripts": {
+    "yt-ts-component-app": "node ./tasks/create.js"
+  },
+  "author": "tony",
+  "license": "MIT"
+}
