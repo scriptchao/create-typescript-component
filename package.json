@@ -1,6 +1,6 @@
 {
   "name": "@yt/yt-ts-component-app",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "bin": {
     "yt-ts-component-app": "./tasks/create.js"
   },
