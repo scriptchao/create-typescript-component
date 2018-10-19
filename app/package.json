@@ -1,7 +1,6 @@
 {
   "name": "yt-ts-component-app",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-jest": "^22.1.0",
@@ -48,7 +47,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lib": "rimraf lib && npm run lib:types && npm run lib:js",
-    "lib:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "lib:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline --copy-files",
     "lib:types": "tsc --emitDeclarationOnly --declaration",
     "dist": "rimraf dist && node scripts/dist.js"
   },
