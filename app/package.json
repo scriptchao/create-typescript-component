@@ -1,7 +1,6 @@
 {
   "name": "yt-ts-component-app",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-jest": "^22.1.0",
