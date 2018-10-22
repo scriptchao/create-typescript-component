@@ -1,6 +1,6 @@
 {
   "name": "@yt/yt-ts-component-app",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "typescript组件开发脚手架",
   "bin": {
     "yt-ts-component-app": "./tasks/create.js"

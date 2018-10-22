@@ -4,10 +4,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Intro from '../src';
+import Preview from './preview';
 
 
 ReactDOM.render(
-    <Intro />,
+    <Preview />,
     document.getElementById('root')
 );

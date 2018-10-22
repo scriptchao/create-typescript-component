@@ -128,7 +128,7 @@ module.exports = {
                 test: /\.(js|jsx|mjs|tsx?)$/,
                 loader: require.resolve('source-map-loader'),
                 enforce: 'pre',
-                // include: paths.appSrc,
+                include: [paths.appSrc, paths.appPlayground],
             },
             {
                 // "oneOf" will traverse all following loaders until one will
@@ -147,7 +147,7 @@ module.exports = {
                     },
                     {
                         test: /\.(js|jsx|mjs|tsx?)$/,
-                        // include: paths.appSrc,
+                        include: [paths.appSrc, paths.appPlayground],
                         loader: require.resolve('babel-loader'),
                         options: {
 
@@ -272,6 +272,9 @@ module.exports = {
                                         },
                                         {
                                             loader: require.resolve('less-loader'),
+                                            options: {
+                                                javascriptEnabled: true
+                                            }
                                         },
                                     ],
                                 },
